@@ -1,0 +1,40 @@
+.contact__container{
+    display: grid;
+    place-items: center;
+}
+
+.contact__wrapper{
+    width: fit-content;
+    display: flex;
+    gap: 2rem;
+}
+
+.contact__wrapper a {
+    display: flex;
+    background: var(--color-gray-100);
+    color: var(--color-primary);
+    font-size: 2rem;
+    border: 2px solid transparent;
+    transition: var(--transition);
+    padding: 2rem;
+    border-radius: 1.5rem;
+    align-items: center;
+}
+
+.contact__wrapper a:hover{
+    background: transparent;
+    color: var(--color-gray-100);
+    border-color: var(--color-gray-100);
+}
+
+@media screen and (max-width: 1024px) {
+    .contact__wrapper{
+        gap: 1.5rem;
+    }
+    .contact__wrapper a{
+        padding: 1rem;
+        font-size: 2rem;
+        border-radius: 1rem;
+    }
+    
+}

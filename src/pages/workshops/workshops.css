@@ -1,0 +1,57 @@
+.workshops__container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+}
+
+.workshop h3{
+    margin-bottom: 0.8rem;
+
+}
+.workshop small{
+    margin-bottom: 2rem;
+}
+
+.workshop h1{
+    color: var(--color-primary-variant);
+    display: inline;
+}
+
+.workshop h2{
+    display: inline;
+    color: var(--color-gray-400);
+}
+
+.workshop h4{
+    margin-top: 2rem;
+}
+
+.workshop p{
+    margin-top: 1rem;
+    color: var(--color-gray-100);
+}
+.workshop p.disabled{
+    color: var(--color-gray-400);
+}
+
+.workshop button{
+    margin-top: 3rem;
+    cursor: pointer;
+}
+
+@media screen and (max-width:1024px) {
+    .workshops__container{
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+    
+}
+@media screen and (max-width:600px) {
+    .workshops__container{
+        grid-template-columns: 1fr ;
+    }
+    .workshop{
+        width: 90%;
+        margin-inline: auto;
+    }
+}

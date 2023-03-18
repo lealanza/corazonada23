@@ -1,0 +1,7 @@
+.not-found{
+    margin: 5rem auto;
+    padding: 2rem;
+    width: 400px;
+    object-fit: cover;
+    text-align: center;
+}
